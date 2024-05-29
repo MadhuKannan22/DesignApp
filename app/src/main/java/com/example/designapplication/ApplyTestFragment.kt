@@ -25,6 +25,7 @@ class ApplyTestFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnApplyTest.setOnClickListener {
+            //navigation
             findNavController().navigate(R.id.action_applyTestFragment_to_Chapters1Fragment2)
         }
     }
