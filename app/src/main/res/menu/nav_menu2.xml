@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group>
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_action_icon_home_drawer"
+        android:title="Home"
+
+        />
+    <item
+        android:id="@+id/subscriptions"
+        android:icon="@drawable/ic_action_icon_subscriptions_drawer"
+        android:title="Subscription" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_action_icon_profile_drawer"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/Privacy_policy"
+        android:icon="@drawable/ic_action_icon_privacy_drawer"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/terms_conditions"
+        android:icon="@drawable/ic_action_icon_conditions_drawer"
+        android:title="Terms&amp;Conditions" />
+
+    <item
+        android:id="@+id/contact_us"
+        android:icon="@drawable/ic_action_icon_contact_drawer"
+        android:title="Contact us" />
+
+    </group>
+
+    <item android:title=""
+
+        >
+
+        <menu>
+            <item android:title="Log Out"
+                android:icon="@drawable/ic_action_icon_log_out"
+                />
+        </menu>
+
+
+    </item>
+
+    <group>
+    <item android:title="">
+
+        <menu>
+            <item android:title="" />
+
+        </menu>
+    </item>
+    </group>
+
+
+
+
+</menu>

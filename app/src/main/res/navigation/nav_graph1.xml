@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph1"
+    app:startDestination="@id/VideosFragment2">
+    <fragment
+        android:id="@+id/VideosFragment2"
+        android:name="com.example.designapplication.VideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/MaterialsFragment2"
+        android:name="com.example.designapplication.MaterialsFragment"
+        android:label="fragment_materials"
+        tools:layout="@layout/fragment_materials" />
+    <fragment
+        android:id="@+id/Chapters1Fragment2"
+        android:name="com.example.designapplication.Chapters1Fragment"
+        android:label="fragment_chapters1"
+        tools:layout="@layout/fragment_chapters1" >
+        <action
+            android:id="@+id/action_Chapters1Fragment2_to_winnerFragment"
+            app:destination="@id/winnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyTestFragment"
+        android:name="com.example.designapplication.ApplyTestFragment"
+        android:label="fragment_apply_test"
+        tools:layout="@layout/fragment_apply_test" >
+        <action
+            android:id="@+id/action_applyTestFragment_to_Chapters1Fragment2"
+            app:destination="@id/Chapters1Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/winnerFragment"
+        android:name="com.example.designapplication.WinnerFragment"
+        android:label="fragment_winner"
+        tools:layout="@layout/fragment_winner" >
+        <action
+            android:id="@+id/action_winnerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.designapplication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_chipFragment"
+            app:destination="@id/chipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chipFragment"
+        android:name="com.example.designapplication.ChipFragment"
+        android:label="fragment_chip"
+        tools:layout="@layout/fragment_chip" >
+        <action
+            android:id="@+id/action_chipFragment_to_applyTestFragment"
+            app:destination="@id/applyTestFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/VideosFragment2"
+        android:icon="@drawable/baseline_smart_display_24"
+        android:title="Videos" />
+    <item
+        android:id="@+id/MaterialsFragment2"
+        android:icon="@drawable/baseline_note_test"
+        android:title="Materials" />
+    <item
+        android:id="@+id/applyTestFragment"
+        android:icon="@drawable/baseline_follow_the_test"
+        android:title="Tests" />
+
+</menu>
